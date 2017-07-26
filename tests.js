@@ -27,7 +27,7 @@ describe('Array tasks', function () {
 
 	// it('should find duplicate values in an array, returning a new array of the duplicates', function () {
 	// 	var arr = [1, 2, 3, 4, 4, 5, 5, 5]
-	// 	assert.deepEqual([4, 5], arrayTasks.findDuplicates(arr))
+	// 	assert.deepEqual(arrayTasks.findDuplicates(arr), [4, 5])
 	// })
 
 	// it('should remove all instances of a value from an array, returning a new array', function () {
@@ -40,9 +40,9 @@ describe('Array tasks', function () {
 	// 	assert.deepEqual([0, 2, 5], arrayTasks.findIndexesOf(arr, 1))
 	// })
 
-	// it('should calculate the sum of all of even numbers in an array squared', function () {
-	// 	var arr = [1, 2, 3, 4, 5]
-	// 	assert.equal(20, arrayTasks.sumOfAllEvenNumbersSquared(arr))
-	// })
+	it('should calculate the sum of all of even numbers in an array squared', function () {
+		var arr = [1, 2, 3, 4, 5]
+		assert.equal(arrayTasks.sumOfAllEvenNumbersSquared(arr), 20)
+	})
 
 })
