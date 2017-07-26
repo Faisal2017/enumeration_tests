@@ -34,9 +34,17 @@ var arrayTasks = {
 		return total;
 	},
 
-	// findDuplicates: function (arr) {
-		
-	// },
+	findDuplicates: function (arr) {
+		var newArray = [];
+		var newArray2 = [];
+
+		for (var i = 0; i < arr.length - 1; i ++) {
+			if (arr[i + 1] === arr[i]) {
+				newArray.push(arr[i]);
+			}
+		}
+
+	},
 
 	removeAndClone: function (arr, valueToRemove) {
 		var newArray = [];
