@@ -25,9 +25,14 @@ var arrayTasks = {
 		return newArray;
 	},
 
-	// sum: function (arr) {
-		
-	// },
+	sum: function (arr) {
+		var total = 0;
+
+		for (number of arr) {
+			total += number;
+		}
+		return total;
+	},
 
 	// findDuplicates: function (arr) {
 		
