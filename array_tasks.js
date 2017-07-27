@@ -11,6 +11,11 @@ var arrayTasks = {
 		return newArray;
 	},
 
+	// concat: function (arr1, arr2) {
+	// 	var resultArray = arr1.concat(arr2);
+	// 	return resultArray;
+	// }
+
 	insertAt: function (arr, itemToAdd, index) {
 		arr.splice(index, 0, itemToAdd);
 		return arr;
@@ -36,14 +41,13 @@ var arrayTasks = {
 
 	findDuplicates: function (arr) {
 		var newArray = [];
-		var newArray2 = [];
+		var resultArray = [];	
 
-		for (var i = 0; i < arr.length - 1; i ++) {
-			if (arr[i + 1] === arr[i]) {
-				newArray.push(arr[i]);
-			}
+		for (item of arr) {
+			newArray.includes(item) && !resultArray.includes(item) ? resultArray.
+			push(item) : newArray.push(item);
 		}
-
+		return resultArray;
 	},
 
 	removeAndClone: function (arr, valueToRemove) {
